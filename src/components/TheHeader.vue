@@ -89,6 +89,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+header {
+  flex-shrink: 0;
+}
 // Definiamo il bgc del top-header
 #top-header {
   background-color: black;

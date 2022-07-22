@@ -60,6 +60,8 @@ ul > li {
 }
 
 .set-display {
+  height: 100vh;
+
   display: flex;
   flex-direction: column;
 }

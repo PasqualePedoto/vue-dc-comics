@@ -16,6 +16,7 @@ export default {
 main {
   padding: 50px;
   background-color: black;
+  flex-shrink: 0;
 
   h2 {
     font-weight: bold;
