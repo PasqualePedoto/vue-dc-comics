@@ -10,7 +10,11 @@ farvi venire qualche grattacapo! Cercate di trovare una soluzione da veri progra
 proprio in caso di emergenza, aprite un ticket! -->
 
 <template>
-  <div></div>
+  <div>
+    <TheMain />
+    <TheHeader />
+    <TheFooter />
+  </div>
 </template>
 
 <script>
@@ -19,7 +23,7 @@ import TheMain from "./components/TheMain.vue";
 import TheFooter from "./components/TheFooter.vue";
 
 export default {
-  name: "App",
+  name: "DC-Comics",
   components: {
     TheHeader,
     TheMain,
@@ -28,4 +32,40 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+// GENERICS
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+
+  height: 100%;
+}
+
+// UTILS
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.my_border {
+  border: 1px solid black;
+}
+</style>
