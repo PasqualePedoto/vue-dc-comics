@@ -61,83 +61,87 @@ export default {
     return {
       dcComicsLinks: [
         {
-          text: "Link",
+          text: "Characters",
           url: "#",
         },
         {
-          text: "Link",
+          text: "Comics",
           url: "#",
         },
         {
-          text: "Link",
+          text: "Movies",
           url: "#",
         },
         {
-          text: "Link",
+          text: "TV",
           url: "#",
         },
         {
-          text: "Link",
+          text: "Games",
           url: "#",
         },
         {
-          text: "Link",
+          text: "Videos",
           url: "#",
         },
         {
-          text: "Link",
+          text: "News",
           url: "#",
         },
       ],
       shopLinks: [
         {
-          text: "link",
+          text: "Shop DC",
           url: "#",
         },
         {
-          text: "link",
-          url: "#",
-        },
-        {
-          text: "link",
-          url: "#",
-        },
-        {
-          text: "link",
-          url: "#",
-        },
-        {
-          text: "link",
+          text: "Shop DC Collectibles",
           url: "#",
         },
       ],
       sitesLinks: [
         {
-          text: "Link",
+          text: "Terms Of Use",
           url: "#",
         },
         {
-          text: "Link",
+          text: "Privacy policy (New)",
           url: "#",
         },
         {
-          text: "Link",
+          text: "Ad Choices",
           url: "#",
         },
         {
-          text: "Link",
+          text: "Advertising",
           url: "#",
         },
         {
-          text: "Link",
+          text: "Jobs",
           url: "#",
         },
         {
-          text: "Link",
+          text: "Subscriptions",
           url: "#",
         },
         {
-          text: "Link",
+          text: "Talent Workshops",
+          url: "#",
+        },
+        {
+          text: "CPSC Certificates",
+          url: "#",
+        },
+        {
+          text: "Ratings",
+          url: "#",
+        },
+        {
+          text: "Shop Help",
+          url: "#",
+        },
+        {
+          text: "Contact Us",
           url: "#",
         },
       ],
