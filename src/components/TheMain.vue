@@ -1,5 +1,9 @@
 <template>
-  <div></div>
+  <main>
+    <div class="container">
+      <h2>Content is here</h2>
+    </div>
+  </main>
 </template>
 
 <script>
@@ -8,4 +12,14 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+main {
+  padding: 50px;
+  background-color: black;
+
+  h2 {
+    font-weight: bold;
+    color: white;
+  }
+}
+</style>
