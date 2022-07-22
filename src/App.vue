@@ -58,6 +58,10 @@ a {
   height: 100%;
 }
 
+body {
+  font-family: sans-serif;
+}
+
 // UTILS
 
 .container {
