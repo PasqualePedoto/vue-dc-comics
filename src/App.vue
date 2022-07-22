@@ -11,8 +11,8 @@ proprio in caso di emergenza, aprite un ticket! -->
 
 <template>
   <div>
-    <TheMain />
     <TheHeader />
+    <TheMain />
     <TheFooter />
   </div>
 </template>

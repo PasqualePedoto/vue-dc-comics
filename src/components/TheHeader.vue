@@ -3,16 +3,20 @@
     <div id="top-header"></div>
     <div id="bottom-header">
       <div class="container">
-        <div class="border">
-          <figure>
-            <img src="../assets/img/dc-logo.png" alt="DC-logo" />
-          </figure>
-          <ul>
-            <li v-for="link in links" :key="link.text">
-              <a :href="link.url">{{ link.text }}</a>
-            </li>
-          </ul>
-        </div>
+        <nav id="header-content">
+          <div id="logo">
+            <figure>
+              <img src="../assets/img/dc-logo.png" alt="DC-logo" />
+            </figure>
+          </div>
+          <div id="list-of-links">
+            <ul>
+              <li v-for="link in links" :key="link.text">
+                <a :href="link.url">{{ link.text }}</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </div>
   </header>
@@ -89,14 +93,35 @@ export default {
 
 #bottom-header {
   background-color: white;
+
+  height: 150px;
 }
 
-.container > div {
+#bottom-header > * {
+  height: 100%;
+}
+
+#header-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   padding: 10px;
+}
+
+#header-content {
+  padding: 0;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo,
+#header-content,
+#list-of-links {
   height: 100%;
 }
 
@@ -105,14 +130,29 @@ ul {
   align-items: center;
   justify-content: center;
   height: 100%;
+  cursor: pointer;
 
   li {
     height: 100%;
-    margin-right: 1.5rem;
+    padding: 0 1rem;
+    border-bottom: 10px solid transparent;
+    transition: border-bottom 0.2s linear;
 
     a {
       height: 100%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
+}
+
+ul li:hover {
+  border-bottom: 10px solid #1c82fa;
+}
+
+ul li:hover a {
+  color: #1c82fa;
 }
 </style>
