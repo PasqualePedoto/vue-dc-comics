@@ -187,6 +187,9 @@ export default {
   display: flex;
   height: 100%;
 
+  // Diamo il position relative per posizionare il bottom footer
+  position: relative;
+
   // Centriamo la foto e diamo height: 100 al figure così da ereditare
   // l'altezza del footer
   figure {
