@@ -33,6 +33,32 @@ export default {
 </script>
 
 <style lang="scss">
+// GENERICS
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul > li {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: auto;
+}
+
 .set-display {
   display: flex;
   flex-direction: column;
