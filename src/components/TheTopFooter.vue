@@ -99,7 +99,7 @@ export default {
           url: "#",
         },
       ],
-      sitesLinks: [
+      dcLinks: [
         {
           text: "Terms Of Use",
           url: "#",
@@ -145,33 +145,25 @@ export default {
           url: "#",
         },
       ],
-      dcLinks: [
+      sitesLinks: [
         {
-          text: "Link",
+          text: "DC",
           url: "#",
         },
         {
-          text: "Link",
+          text: "MAD Magazine",
           url: "#",
         },
         {
-          text: "Link",
+          text: "DC Kids",
           url: "#",
         },
         {
-          text: "Link",
+          text: "DC Universe",
           url: "#",
         },
         {
-          text: "Link",
-          url: "#",
-        },
-        {
-          text: "Link",
-          url: "#",
-        },
-        {
-          text: "Link",
+          text: "DC Power Visa",
           url: "#",
         },
       ],

@@ -10,7 +10,7 @@
               <li class="follow-us">FOLLOW US</li>
               <li v-for="social in socialLinks" :key="social.src">
                 <a :href="social.url">
-                  <img :src="social.src" :alt="social.alt" />
+                  <img :src="getImgUrl(social.src)" :alt="social.alt" />
                 </a>
               </li>
             </ul>
@@ -31,32 +31,38 @@ export default {
     return {
       socialLinks: [
         {
-          src: "../assets/img/footer-youtube.png",
+          src: "img/footer-youtube",
           alt: "youtube",
           url: "#",
         },
         {
-          src: "../assets/img/footer-twitter.png",
+          src: "img/footer-twitter",
           alt: "twitter",
           url: "#",
         },
         {
-          src: "../assets/img/footer-pinterest.png",
+          src: "img/footer-pinterest",
           alt: "pinterest",
           url: "#",
         },
         {
-          src: "../assets/img/footer-facebook.png",
+          src: "img/footer-facebook",
           alt: "facebook",
           url: "#",
         },
         {
-          src: "../assets/img/footer-periscope.png",
+          src: "img/footer-periscope",
           alt: "periscope",
           url: "#",
         },
       ],
     };
+  },
+  methods: {
+    getImgUrl(pet) {
+      let images = require.context("../assets/", false, /\.assets\.js$/);
+      return images("./" + pet + ".png");
+    },
   },
 };
 </script>
