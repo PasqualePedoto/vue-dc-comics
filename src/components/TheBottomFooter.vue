@@ -10,7 +10,7 @@
               <li class="follow-us">FOLLOW US</li>
               <li v-for="social in socialLinks" :key="social.src">
                 <a :href="social.url">
-                  <img :src="getImgUrl(social.src)" :alt="social.alt" />
+                  <img src="getImgUrl(social.src)" :alt="social.alt" />
                 </a>
               </li>
             </ul>
