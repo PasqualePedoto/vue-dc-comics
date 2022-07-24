@@ -8,50 +8,13 @@
     <div id="merch">
       <div class="container">
         <ul>
-          <!-- Comics -->
-          <li>
-            <a href="#">
+          <li v-for="link in merchLinks" :key="link.src">
+            <a :href="link.href">
               <figure>
-                <img src="../assets/img/buy-comics-digital-comics.png" alt="comics" />
+                <img :src="link.src" :alt="link.alt" />
               </figure>
             </a>
-            <p>DIGITAL COMICS</p>
-          </li>
-          <!-- DC Comics -->
-          <li>
-            <a href="#">
-              <figure>
-                <img src="../assets/img/buy-comics-merchandise.png" alt="dc-comics" />
-              </figure>
-            </a>
-            <p>DC MERCHANDIZING</p>
-          </li>
-          <!-- Shop -->
-          <li>
-            <a href="#">
-              <figure>
-                <img src="../assets/img/buy-comics-shop-locator.png" alt="shop" />
-              </figure>
-            </a>
-            <p>SUBSCRIPTION</p>
-          </li>
-          <!-- Subscriptions -->
-          <li>
-            <a href="#">
-              <figure>
-                <img src="../assets/img/buy-comics-subscriptions.png" alt="sub" />
-              </figure>
-            </a>
-            <p>COMIC SHOP LOCATOR</p>
-          </li>
-          <!--  -->
-          <li>
-            <a href="#">
-              <figure>
-                <img src="../assets/img/buy-dc-power-visa.svg" alt="visa" />
-              </figure>
-            </a>
-            <P>DC POWER VISA</P>
+            <p>{{ link.alt }}</p>
           </li>
         </ul>
       </div>
@@ -62,6 +25,37 @@
 <script>
 export default {
   name: "TheMain",
+  data() {
+    return {
+      merchLinks: [
+        {
+          src: `${require("../assets/img/buy-comics-digital-comics.png")}`,
+          alt: "DIGITAL COMICS",
+          href: "#",
+        },
+        {
+          src: `${require("../assets/img/buy-comics-merchandise.png")}`,
+          alt: "COMICS MERCHANDIZING",
+          href: "#",
+        },
+        {
+          src: `${require("../assets/img/buy-comics-shop-locator.png")}`,
+          alt: "SHOP LOCATOR",
+          href: "#",
+        },
+        {
+          src: `${require("../assets/img/buy-comics-subscriptions.png")}`,
+          alt: "COMICS SUBSCRIPTIONS",
+          href: "#",
+        },
+        {
+          src: `${require("../assets/img/buy-dc-power-visa.svg")}`,
+          alt: "POWER VISA",
+          href: "#",
+        },
+      ],
+    };
+  },
 };
 </script>
 
