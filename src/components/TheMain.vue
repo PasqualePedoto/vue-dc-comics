@@ -2,18 +2,7 @@
   <main>
     <div id="content">
       <div class="container">
-        <div>
-          <ul>
-            <li v-for="(comic, i) in comics" :key="i">
-              <a href="#">
-                <figure>
-                  <img :src="comic.thumb" :alt="comic.series" />
-                </figure>
-                <p>{{ comic.series }}</p>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ComicCardsSection :comic-cards="comics" />
       </div>
     </div>
     <div id="merch">
@@ -34,12 +23,10 @@
 </template>
 
 <script>
+import ComicCardsSection from "./ComicCardsSection.vue";
 export default {
   name: "TheMain",
-  components: {},
-  props: {
-    ComicCards: Array,
-  },
+  components: { ComicCardsSection },
   data() {
     return {
       comics: [
@@ -157,23 +144,6 @@ main {
     background-color: black;
 
     position: relative;
-
-    ul {
-      display: flex;
-      flex-wrap: wrap;
-      width: 700px;
-
-      margin: 0 auto;
-
-      li {
-        width: calc(100% / 6);
-        border: 2px solid red;
-
-        figure {
-          width: 100%;
-        }
-      }
-    }
   }
 
   #merch {
