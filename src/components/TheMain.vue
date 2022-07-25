@@ -2,6 +2,9 @@
   <main>
     <div id="content">
       <div class="container">
+        <div class="current-series-flag">
+          <p>CURRENT SERIES</p>
+        </div>
         <ComicCardsSection :comic-cards="ComicCards" />
       </div>
     </div>
@@ -73,6 +76,19 @@ main {
     background-color: black;
 
     position: relative;
+
+    .current-series-flag {
+      position: absolute;
+      bottom: 95%;
+      transform: translateY(-50%);
+      left: 15%;
+
+      background-color: #1c82f9;
+      color: white;
+      padding: 0.5rem;
+
+      z-index: 4;
+    }
   }
 
   #merch {

@@ -12,6 +12,7 @@ proprio in caso di emergenza, aprite un ticket! -->
 <template>
   <div class="set-display">
     <TheHeader />
+    <BaseJumbotron />
     <TheMain :comic-cards="comics" />
     <TheFooter />
     <TheBottomFooter />
@@ -23,11 +24,13 @@ import TheHeader from "./components/TheHeader.vue";
 import TheMain from "./components/TheMain.vue";
 import TheFooter from "./components/TheFooter.vue";
 import TheBottomFooter from "./components/TheBottomFooter.vue";
+import BaseJumbotron from "./components/BaseJumbotron.vue";
 
 export default {
   name: "DC-Comics",
   components: {
     TheHeader,
+    BaseJumbotron,
     TheMain,
     TheFooter,
     TheBottomFooter,
