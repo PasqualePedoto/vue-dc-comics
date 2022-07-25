@@ -26,7 +26,7 @@ export default {
 ul {
   display: flex;
   flex-wrap: wrap;
-  width: 700px;
+  width: 800px;
 
   margin: 0 auto;
 
