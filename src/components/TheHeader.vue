@@ -130,17 +130,30 @@ header {
       display: flex;
 
       li {
-        margin-right: 1.2rem;
+        width: 80px;
+        padding: 0 0.5rem;
 
         display: flex;
         align-items: center;
         justify-content: center;
 
-        border-bottom: transparent;
+        border-bottom: 5px solid transparent;
+        transition: border-bottom 0.15s linear;
+
+        cursor: pointer;
 
         a {
           color: black;
+          transition: color 0.15s linear;
         }
+      }
+
+      li:hover {
+        border-bottom: 5px solid #1c82f9;
+      }
+
+      li:hover a {
+        color: #1c82f9;
       }
     }
 
