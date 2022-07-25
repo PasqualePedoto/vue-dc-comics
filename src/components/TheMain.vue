@@ -3,7 +3,7 @@
     <div id="content">
       <div class="container">
         <div class="current-series-flag">
-          <p>CURRENT SERIES</p>
+          <BlueFlag blue-flag-text="CURRENT SERIES" />
         </div>
         <ComicCardsSection :comic-cards="ComicCards" />
       </div>
@@ -27,9 +27,11 @@
 
 <script>
 import ComicCardsSection from "./ComicCardsSection.vue";
+import BlueFlag from "./BlueFlag.vue";
+
 export default {
   name: "TheMain",
-  components: { ComicCardsSection },
+  components: { ComicCardsSection, BlueFlag },
   props: {
     ComicCards: Array,
   },
@@ -82,11 +84,6 @@ main {
       bottom: 95%;
       transform: translateY(-50%);
       left: 15%;
-
-      background-color: #1c82f9;
-      color: white;
-      padding: 0.5rem;
-
       z-index: 4;
     }
   }

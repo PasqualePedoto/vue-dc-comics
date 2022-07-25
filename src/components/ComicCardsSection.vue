@@ -10,12 +10,18 @@
         </a>
       </li>
     </ul>
+    <BlueFlag blue-flag-text="LOAD MORE" />
   </div>
 </template>
 
 <script>
+import BlueFlag from "./BlueFlag.vue";
+
 export default {
   name: "ComicCardsSection",
+  components: {
+    BlueFlag,
+  },
   props: {
     ComicCards: Array,
   },
