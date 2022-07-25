@@ -26,13 +26,14 @@ export default {
 ul {
   display: flex;
   flex-wrap: wrap;
-  width: 800px;
+  width: 80%;
 
   margin: 0 auto;
 
   li {
-    width: calc(100% / 6);
+    width: calc(100% / 6 - 20px);
     border: 2px solid #1c82f9;
+    margin: 10px 10px;
 
     figure {
       width: 100%;
