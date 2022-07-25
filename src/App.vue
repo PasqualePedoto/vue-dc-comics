@@ -11,7 +11,7 @@ proprio in caso di emergenza, aprite un ticket! -->
 
 <template>
   <div class="set-display">
-    <TheHeader />
+    <TheHeader :navbar-links="navbarLinks" />
     <BaseJumbotron />
     <TheMain :comic-cards="comics" />
     <TheFooter />
@@ -109,6 +109,58 @@ export default {
           price: "$16.99",
           series: "Catwoman",
           type: "graphic novel",
+        },
+      ],
+      navbarLinks: [
+        {
+          text: "Characters",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Comics",
+          url: "#",
+          current: true,
+        },
+        {
+          text: "Movies",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "TV",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Games",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Collectibles",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Videos",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Fans",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "News",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Shop",
+          url: "#",
+          current: false,
         },
       ],
     };
