@@ -1,19 +1,16 @@
 <template>
   <footer>
     <TheTopFooter />
-    <TheBottomFooter />
   </footer>
 </template>
 
 <script>
 import TheTopFooter from "./TheTopFooter.vue";
-import TheBottomFooter from "./TheBottomFooter.vue";
 
 export default {
   name: "TheFooter",
   components: {
     TheTopFooter,
-    TheBottomFooter,
   },
 };
 </script>

@@ -14,6 +14,7 @@ proprio in caso di emergenza, aprite un ticket! -->
     <TheHeader />
     <TheMain />
     <TheFooter />
+    <TheBottomFooter />
   </div>
 </template>
 
@@ -21,6 +22,7 @@ proprio in caso di emergenza, aprite un ticket! -->
 import TheHeader from "./components/TheHeader.vue";
 import TheMain from "./components/TheMain.vue";
 import TheFooter from "./components/TheFooter.vue";
+import TheBottomFooter from "./components/TheBottomFooter.vue";
 
 export default {
   name: "DC-Comics",
@@ -28,6 +30,7 @@ export default {
     TheHeader,
     TheMain,
     TheFooter,
+    TheBottomFooter,
   },
   data() {
     return {};
@@ -66,5 +69,7 @@ ul > li {
 .set-display {
   display: flex;
   flex-direction: column;
+
+  position: relative;
 }
 </style>
